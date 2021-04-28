@@ -71,8 +71,12 @@ AFRAME.registerComponent('cameratransform', {
 
             const size = `${w},${h}`
 
-            unityInstance.SendMessage("UIScaler", "setSize", size);
+            unityInstance.SendMessage("SayCanvas", "setSize", size);
+			unityInstance.SendMessage("SealCanvas", "setSize", size);
+			unityInstance.SendMessage("GameCanvas", "setSize", size);
+
         }
+		
 
         if(gl != null){
             gl.dontClearOnFrameStart = true;
