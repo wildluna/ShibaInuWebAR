@@ -83,7 +83,7 @@ AFRAME.registerComponent('cameratransform', {
         }
     } 
 });
-
+/*
 AFRAME.registerComponent('copycanvas', {
     tick: function(time, timeDelta){
         const unityCanvas = document.getElementsByTagName('canvas')[0];
@@ -91,3 +91,4 @@ AFRAME.registerComponent('copycanvas', {
         unityCanvas.height = this.el.canvas.height
     } 
 });
+*/
